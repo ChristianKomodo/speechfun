@@ -1,0 +1,13 @@
+{
+    "name": "christianknoll/speechfun.org",
+    "require-dev": {
+        "phpmailer/phpmailer": "^6.3"
+    },
+    "authors": [
+        {
+            "name": "703114283",
+            "email": "christian.knoll@universalorlando.com"
+        }
+    ],
+    "require": {}
+}
