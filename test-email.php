@@ -13,14 +13,22 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                //Enable verbose debug output
-    $mail->isSMTP();                                      //Send using SMTP
-    $mail->Host       = 'gator4006.hostgator.com';        //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                             //Enable SMTP authentication
-    $mail->Username = 'admin@speechfun.org';              //SMTP username
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    //$mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
+    // $mail->Host       = 'mail.speechfun.org';                     //Set the SMTP server to send through
+    // $mail->Host       = 'gator3322.hostgator.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'gator4006.hostgator.com';                     //Set the SMTP server to send through
+    // $mail->Host       = 'speechfun.org';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    //$mail->Username   = 'user@example.com';                     //SMTP username
+    //$mail->Password   = 'secret';                               //SMTP password
+    $mail->Username = 'admin@speechfun.org';              // SMTP username
     $mail->Password = 'm3r!c$$1te!';     
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;      //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 465;                              //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    // $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     // $mail->setFrom('from@example.com', 'Mailer');
@@ -29,7 +37,7 @@ try {
     $mail->addAddress('geekfabulous@gmail.com', 'Admin Christian');
     // $mail->addAddress('ellen@example.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
-    $mail->addReplyTo('admin@speechfun.org', 'Admin Christian');
+    $mail->addReplyTo('geekfabulous@gmail.com', 'Admin Christian');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
 
@@ -39,7 +47,7 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Email test 2.11';
+    $mail->Subject = '465 Works!';
     $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
