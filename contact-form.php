@@ -96,7 +96,7 @@
                 </div>
             </div>
         </form>
-        <small>Mail version 2.3</small>
+        <small>Mail version 2.4</small>
     </div>
 
 <?php } ?>
