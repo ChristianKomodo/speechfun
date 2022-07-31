@@ -1,11 +1,11 @@
 <?php
-    //Import PHPMailer classes into the global namespace
-    //These must be at the top of your script, not inside a function
+    // Import PHPMailer classes into the global namespace
+    // These must be at the top of your script, not inside a function
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
 
-    //Load Composer's autoloader
+    // Load Composer's autoloader
     require 'vendor/autoload.php';
 
     if ($_POST) {
@@ -13,7 +13,7 @@
         $extra = substr(strip_tags($_POST['extra']), 0, 255);
 
         // Spam check
-        if ($extra !== "5") {
+        if ($extra !== "7") {
             echo '<div class="well">
             <h3>There was a problem sending the form.</h3>
             <br>
@@ -23,7 +23,7 @@
             return;
         }
 
-        $mail = new PHPMailer(true);   // Passing `true` enables exceptions
+        $mail = new PHPMailer(true); // Passing `true` enables exceptions
         try {
             // Prepare the fields
             $your_name = substr(strip_tags($_POST['your_name']), 0, 255);
@@ -44,13 +44,13 @@
             $mail->setFrom('admin@speechfun.org', 'Speechfun.org Response Form');
             $mail->addAddress('cirema@aol.com', 'Meric');
             $mail->addReplyTo('admin@speechfun.org', 'Speechfun.org Response Form');
-            $mail->addCC('h.gunter16@yahoo.com');
-			$mail->addCC('tahnee.wilderSLP@gmail.com');
             $mail->addCC('kdhstewart@gmail.com');
+			$mail->addCC('jamiemospeech@gmail.com');
+			$mail->addCC('slpbrittanymonroy@gmail.com');
             $mail->addBCC('geekfabulous@gmail.com', 'Admin Christian BCC');
 
-            //Content
-            $mail->isHTML(true);                                  // Set email format to HTML
+            // Content
+            $mail->isHTML(true);
             $mail->Subject = 'Speechfun Website Response from ' . $your_name;
             $mail->msgHTML('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head></head><body><style></style>
             <h1 style="color:#fa6900">SpeechFun.org Contact Form Response</h1>
@@ -85,9 +85,9 @@
                 <label class="col-sm-3 control-label">Message</label>
                 <div class="col-sm-6"><textarea name="your_message" class="form-control" required rows="5"></textarea></div>
             </div>
-            <p>To prevent spam, please type the number five into the box below:</p>
+            <p>To prevent spam, please type the number seven into the box below:</p>
             <div class="form-group">
-                <label class="col-sm-7 control-label">Enter the number five here</label>
+                <label class="col-sm-7 control-label">Enter the number seven here</label>
                 <div class="col-sm-2"><input name="extra" type="number" class="form-control" required></div>
             </div>
             <div class="form-group">
@@ -96,7 +96,7 @@
                 </div>
             </div>
         </form>
-        <small>Mail version 2.24</small>
+        <small>Mail version 2.3</small>
     </div>
 
 <?php } ?>
