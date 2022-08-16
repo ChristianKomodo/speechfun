@@ -15,10 +15,10 @@
         // Spam check
         if ($extra !== "7") {
             echo '<div class="well">
-            <h3>There was a problem sending the form.</h3>
-            <br>
-            <p>You did not enter the correct number in the box at the bottom of the contact form.  Please go back and enter the correct number.  This is a precaution against spam and other attacks and we apologize for the inconvenience.</p>
-            <p>If you continue to encounter this issue, please call us at 407-761-0561 so we can assist personally.</p>
+                <h3>There was a problem sending the form.</h3>
+                <br>
+                <p>You did not enter the correct number in the box at the bottom of the contact form.  Please go back and enter the correct number.  This is a precaution against spam and other attacks and we apologize for the inconvenience.</p>
+                <p>If you continue to encounter this issue, please call us at 407-761-0561 so we can assist personally.</p>
             </div>';
             return;
         }
@@ -44,10 +44,7 @@
             $mail->setFrom('admin@speechfun.org', 'Speechfun.org Response Form');
             $mail->addAddress('cirema@aol.com', 'Meric');
             $mail->addReplyTo('admin@speechfun.org', 'Speechfun.org Response Form');
-            $mail->addCC('kdhstewart@gmail.com');
-			$mail->addCC('jamiemospeech@gmail.com');
-			$mail->addCC('slpbrittanymonroy@gmail.com');
-            $mail->addBCC('geekfabulous@gmail.com', 'Admin Christian BCC');
+            $mail->addBCC('geekfabulous@gmail.com', 'Admin');
 
             // Content
             $mail->isHTML(true);
@@ -96,7 +93,7 @@
                 </div>
             </div>
         </form>
-        <small>Mail version 2.4</small>
+        <small>Mail version 2.5</small>
     </div>
 
 <?php } ?>

@@ -130,10 +130,11 @@
                 $mail->setFrom('admin@speechfun.org', 'Speechfun.org Response Form');
                 $mail->addAddress('cirema@aol.com', 'Meric');
                 $mail->addReplyTo('admin@speechfun.org', 'Speechfun.org Response Form');
-                $mail->addCC('h.gunter16@yahoo.com');
-                $mail->addCC('tahnee.wilderSLP@gmail.com');
+                $mail->addCC('campbell.o@yahoo.com');
                 $mail->addCC('kdhstewart@gmail.com');
-                // $mail->addBCC('geekfabulous@gmail.com', 'Admin Christian BCC');
+                $mail->addCC('jamiemospeech@gmail.com');
+                $mail->addCC('slpbrittanymonroy@gmail.com');
+                $mail->addBCC('geekfabulous@gmail.com', 'Admin Christian BCC');
 
                 // Build the email response HTML
                 $someHTML = '';
