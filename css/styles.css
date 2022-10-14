@@ -1,0 +1,384 @@
+h1 {
+  color: #6699FF;
+  font-family: 'Indie Flower', cursive;
+  font-size: 3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+h2 {
+  color: #6699FF;
+  font-size: 1.75em;
+}
+h2.subheading {
+  display: inline-block;
+  margin-left: 25px;
+}
+h3 {
+  color: #6699FF;
+  font-size: 1.25em;
+  margin-bottom: 0;
+}
+form h3 {
+  margin: 5px 0 5px 15px;
+}
+form p {
+  margin-left: 15px;
+}
+.logo {
+  position: relative;
+}
+.logo .logotext {
+  font-family: 'Indie Flower', cursive;
+  left: 0;
+  bottom: 0;
+  font-size: 35px;
+  opacity: .6;
+}
+.topbar h1,
+.topbar {
+  color: #FA6900;
+}
+.topbar h1 {
+  font-size: 3.5em;
+  margin: 10px 0;
+}
+.home-bar h2 {
+  font-size: 2em;
+  color: #fff;
+}
+.cursive {
+  font-family: 'Indie Flower', cursive;
+}
+.tagline {
+  font-weight: 300;
+  font-size: 25px;
+  margin: 10px 0;
+  color: #6699FF;
+}
+.panel-orange > .panel-heading {
+  color: #fff;
+  background-color: #F38630;
+  border-color: #F38630;
+}
+.panel-orange {
+  border-color: #F38630;
+}
+.navbar-inverse {
+  background-color: #F38630;
+  border: none;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  background-color: #F38630;
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:active,
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #FA6900;
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: #FA6900;
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-nav {
+  font-size: 1.1em;
+}
+.color-main {
+  color: #fff;
+  background-color: #F38630;
+}
+.color-main a:hover {
+  color: #fff;
+  background-color: #FA6900;
+}
+.color-sub {
+  color: #fff;
+  background-color: #6699FF;
+}
+.text-main {
+  color: #F38630;
+}
+.text-sub {
+  color: #6699FF;
+}
+.home-bar {
+  color: #fff;
+  background-color: #6699FF;
+  margin: 0;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.home-bar h2 {
+  margin: 0;
+  padding: 0;
+}
+.home-bar a {
+  color: #aac6ff;
+}
+.bar {
+  padding: 10px 20px;
+  border-radius: 5px;
+  min-height: 175px;
+  margin-bottom: 15px;
+}
+.bar.bkd-1 {
+  background: #F38630 url(../img/slider_myofuctional.jpg) no-repeat top center;
+  background-size: cover;
+  background-position-x: right;
+}
+.bar.bkd-2 {
+  background: #6699FF url(../img/slider_baby.jpg) no-repeat center top;
+  background-size: cover;
+}
+.cube {
+  min-height: 100px;
+  width: 100%;
+  position: relative;
+}
+.cube-img {
+  position: absolute;
+  width: 100%;
+}
+.cube-text {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #F38630;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+.cube-text:hover {
+  opacity: .8;
+}
+.navbar-inverse .navbar-toggle,
+.navbar-toggle.collapsed {
+  border-color: #fff;
+  background-color: #FA6900;
+  border: none;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  border-color: #fff;
+  background-color: #FA6900;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #FA6900;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  color: #fff;
+}
+ul.dropdown-menu li a:hover {
+  background-color: #F38630;
+}
+.dropdown-menu {
+  background-color: #FA6900;
+}
+.photo-column {
+  margin-top: 50px;
+}
+
+.radio-label {
+  font-weight: bold;
+  margin-right: 15px;
+}
+.radio-inline {
+  margin-right: 10px;
+}
+
+
+/* Easy Spacing */
+.mt0 {
+  margin-top: 0;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mt-5 {
+  margin-top: -5px;
+}
+.mt-10 {
+  margin-top: -10px;
+}
+.mt-15 {
+  margin-top: -15px;
+}
+.mt-20 {
+  margin-top: -20px;
+}
+.mt-25 {
+  margin-top: -25px;
+}
+.mr0 {
+  margin-right: 0;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr25 {
+  margin-right: 25px;
+}
+.mr-5 {
+  margin-right: -5px;
+}
+.mr-10 {
+  margin-right: -10px;
+}
+.mr-15 {
+  margin-right: -15px;
+}
+.mr-20 {
+  margin-right: -20px;
+}
+.mr-25 {
+  margin-right: -25px;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb-5 {
+  margin-bottom: -5px;
+}
+.mb-10 {
+  margin-bottom: -10px;
+}
+.mb-15 {
+  margin-bottom: -15px;
+}
+.mb-20 {
+  margin-bottom: -20px;
+}
+.mb-25 {
+  margin-bottom: -25px;
+}
+.ml0 {
+  margin-left: 0;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml25 {
+  margin-left: 25px;
+}
+.ml-5 {
+  margin-left: -5px;
+}
+.ml-10 {
+  margin-left: -10px;
+}
+.ml-15 {
+  margin-left: -15px;
+}
+.ml-20 {
+  margin-left: -20px;
+}
+.ml-25 {
+  margin-left: -25px;
+}
+.p0 {
+  padding: 0;
+}
+.pt0 {
+  padding-top: 0;
+}
+.pr0 {
+  padding-right: 0;
+}
+.pb0 {
+  padding-bottom: 0;
+}
+.pl0 {
+  padding-left: 0;
+}
+@media screen and (min-width: 768px) {
+  /*  NOT Stacked  */
+  /** { color: blue !important; }*/
+}
+@media screen and (max-width: 767px) {
+  /*  Stacked  */
+  /** { color: red !important; }*/
+}
+@media screen and (max-width: 400px) {
+  /*  Super Tiny  */
+  /** { color: purple !important; }*/
+}
+@media screen and (max-width: 991px) {
+  /*  When the NAV disappears  */
+  /** { color: orange !important; }*/
+  .logo .logotext {
+    font-size: 31px;
+    marin-top: 10px;
+  }
+  .tagline {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /*  When the NAV disappears  */
+  /** { color: blue !important; }*/
+  .tagline {
+    font-size: 20px;
+  }
+}
