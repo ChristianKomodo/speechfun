@@ -40,13 +40,25 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="bar bkd-1"></div>
+                <div id="myofunctional" class="bar bkd-1"></div>
             </div>
             <div class="col-sm-4">
                 <div class="bar bkd-2"></div>
             </div>
         </div>
     <?php include 'inc/footer.php'; ?>
+
+    <!-- Link to her new Myofunctional site -->
+    <style type="text/css">
+        #myofunctional {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        $('#myofunctional').click(function() {
+            window.open('https://www.centralfloridaspecialists.org/', '_blank');
+        });
+    </script>
 
 </body>
 
